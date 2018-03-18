@@ -11,7 +11,7 @@ gulp.task('sass', function () {  /*для gulp модуля подключаем
 
 
   gulp.task('pug', function () {
-    return gulp.src('./src/pages/*.pug"')
+    return gulp.src('./src/pages/*.pug')
     .pipe(pug({
         // Your options in here. 
       }))
