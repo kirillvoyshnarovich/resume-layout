@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url("../fonts/Raleway/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url("../fonts/Raleway/Raleway-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: Raleway-MediumItalic;
+    src: url("../fonts/Raleway/Raleway-MediumItalic.ttf");
+
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+
+
+html {
+    font-size:10px;
+}
+
+
+body {
+    margin:0px;
+}
+
+.conteiner {
+    max-width: 740px;
+    margin:0 auto;
+}
+
+/*НАЧАЛ ДЕЛАТЬ HEADER*/
+
+
+.header {
+    background-color:#353541;
+    color:#ffffff;
+
+}
+
+.header__title {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    color:#ffffff;
+    align-items: center;
+    padding:115px 0px 115px 0px;
+       
+}
+
+
+.header__title-heading {
+    font-size:3.7rem;
+    font-family: Raleway-SemiBold;
+    line-height: 0;
+
+}
+
+.header__title-description {
+    font-size:1.1rem;
+    color:#d8d8da;
+    font-family: Raleway-Medium;
+    width:425px;
+    text-align:center;
+    line-height: 2.5;
+
+}
+
+.header__button {
+    padding:17px 44px 17px 44px;
+    background-color:#fb6470;
+    font-size:1.7rem;
+    border:none;
+    border-radius: 3px;
+    font-family: Raleway-Medium;
+    color:#ffffff;
+    margin-top: 20px;
+    line-height: 0.6;
+}
+
+/*ЗАКОНЧИЛ ДЕЛАТЬ HEADER*/
+
+
+/*НАЧАЛ ДЕЛАТЬ БЛОК ABOUT ME*/
+
+.about-me {
+
+    color:#3e3e3e;
+}
+
+.about-me__text-heading {
+    font-size:2.4rem;
+    font-family: Raleway-SemiBold;
+}
+
+.about-me__text-heading-border {
+    width:50%;
+    height:2px;
+    border-bottom: solid 2px #fb6470;
+
+}
+
+
+.about-me__text-descroption {
+    font-size:1.1rem;
+    color:#747474;
+    font-family: Raleway-Medium;
+}
+
+.about-me__text-item-resume-categor {
+
+    
+}
+
+
+
+
+/*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК ABOUT ME*/
+
+
+
+
+
+
