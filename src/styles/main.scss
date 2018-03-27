@@ -35,6 +35,13 @@ body {
     margin:0 auto;
 }
 
+.text-description-for-other-item {
+    font-size:1.3rem;
+    color:#747474;
+    font-family: Raleway-Medium;
+    line-height:1.8;
+}
+
 /*НАЧАЛ ДЕЛАТЬ HEADER*/
 
 
@@ -89,42 +96,141 @@ body {
 
 /*НАЧАЛ ДЕЛАТЬ БЛОК ABOUT ME*/
 
-.about-me {
-
+.about-me{
+    display:flex;
+    justify-content: space-between;
     color:#3e3e3e;
+    padding:80px 0px 80px 0px;
+    border-bottom:solid #e5e5e5 1px;
+    margin-bottom:10px;
 }
 
-.about-me__text-heading {
+
+
+.about-me__text {
+    width:50%;
+
+    .about-me__text-description {
+        @extend .text-description-for-other-item;
+        margin-bottom:45px;
+    }
+
+    
+.about-me__text-item-resume {
+    font-size:1.4rem;
+    color:#3e3e3e;
+    font-family: Raleway-Regular;
+    padding:18px 0px 18px 0px;
+    background-color:#f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+
+
+    .about-me__text-item-resume-category {
+        font-weight:900;
+    }
+
+}
+    
+}
+
+.about-me__text-item-resume:last-child {
+    border-bottom:none;
+}
+
+
+
+
+.about-me-photo {
+    width:50%;
+    height:auto;
+    padding-left:50px;
+    box-sizing:border-box;
+
+    .about-me-photo-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.heading-block-name {
     font-size:2.4rem;
     font-family: Raleway-SemiBold;
+    line-height:1.8;
+    margin-bottom:33px;
+    color:#3e3e3e;
+    
+
+    .heading-block-name__border {
+        height:2px;
+        border-bottom: solid 2px #fb6470;
+        width:75px;
+    
+    }
 }
 
-.about-me__text-heading-border {
-    width:50%;
-    height:2px;
-    border-bottom: solid 2px #fb6470;
+/*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК ABOUT ME*/
 
-}
-
-
-.about-me__text-descroption {
-    font-size:1.1rem;
-    color:#747474;
-    font-family: Raleway-Medium;
-}
-
-.about-me__text-item-resume-categor {
-
+/* НАЧАЛ ДЕЛАТЬ БЛОК WORK EXPERIENCE*/
+.work-experience {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
     
 }
 
 
+h2.heading-block-name {
+    font-weight:400;
+    width:100%;
+    
+}
 
+.work-experience__experience-left-block,
+.work-experience__experience-right-block {
 
-/*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК ABOUT ME*/
+    width:40%;
+}
 
+.work-experience__experience-item1,
+.work-experience__experience-item2,
+.work-experience__experience-item3,
+.work-experience__experience-item4 {
+    padding: 15px 20px 20px 20px;
+    background-color:#353541;
+    border-radius:5px;
+    display:inline-block;
+   
 
+        .work-experience__experience-item1-head {
+        font-size:1.35rem;
+        color:#bebed0;
+        font-family: Raleway-Medium;
+        line-height:1;
+        margin:10px 0px 10px 0px;
 
+            .work-experience__experience-item1-head-name {
+            color:#ffffff;
+            
+         }
+     }
 
+        .work-experience__experience-item1-date {
+        color:#d35965;
+        font-size:1.2rem;
+        font-family: Raleway-Medium;
+        line-height: 1;
+        margin:8px 0px 8px px;
+     }
+
+        .work-experience__experience-item1-description {
+        @extend .text-description-for-other-item;
+        line-height: 1.4;
+        margin:8px 0px 8px 0px;
+        
+     }
+
+}
 
 
