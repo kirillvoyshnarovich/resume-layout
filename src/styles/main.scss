@@ -102,7 +102,7 @@ body {
     color:#3e3e3e;
     padding:80px 0px 80px 0px;
     border-bottom:solid #e5e5e5 1px;
-    margin-bottom:10px;
+    
 }
 
 
@@ -160,6 +160,7 @@ body {
     line-height:1.8;
     margin-bottom:33px;
     color:#3e3e3e;
+    margin-top:0px;
     
 
     .heading-block-name__border {
@@ -177,6 +178,8 @@ body {
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    padding:80px 0px 80px 0px;
+    border-bottom:1px #e5e5e5 solid;
     
 }
 
@@ -190,47 +193,110 @@ h2.heading-block-name {
 .work-experience__experience-left-block,
 .work-experience__experience-right-block {
 
-    width:40%;
+    width:43%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding:100px 0px 0px 0px;
+    
+
 }
 
-.work-experience__experience-item1,
-.work-experience__experience-item2,
-.work-experience__experience-item3,
-.work-experience__experience-item4 {
-    padding: 15px 20px 20px 20px;
+.block-with-description-and-date-and-name {
+    position: relative;
+    padding: 8px 20px 10px 20px;
     background-color:#353541;
-    border-radius:5px;
+    border-radius:7px;
     display:inline-block;
    
 
-        .work-experience__experience-item1-head {
+        .block-with-description-and-date-and-name__head {
         font-size:1.35rem;
         color:#bebed0;
         font-family: Raleway-Medium;
         line-height:1;
-        margin:10px 0px 10px 0px;
+        margin:8px 0px 8px 0px;
 
-            .work-experience__experience-item1-head-name {
+            .block-with-description-and-date-and-name__head-name {
             color:#ffffff;
             
          }
      }
 
-        .work-experience__experience-item1-date {
+        .block-with-description-and-date-and-name__date {
         color:#d35965;
         font-size:1.2rem;
         font-family: Raleway-Medium;
-        line-height: 1;
-        margin:8px 0px 8px px;
+        line-height: 0.8;
+        margin:6px 0px 6px 0px;
      }
 
-        .work-experience__experience-item1-description {
+        .block-with-description-and-date-and-name__description {
         @extend .text-description-for-other-item;
-        line-height: 1.4;
-        margin:8px 0px 8px 0px;
+        line-height: 1.2;
+        margin:6px 0px 6px 0px;
         
      }
 
 }
+/*
+.block-with-description-and-date-and-name:after {
+    display:inline-block;
+    border-left:#353541 solid 40px;
+    border-top:25px solid;
+    border-bottom:solid 15px #353541;
+    border-right-color:transparent;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    transform:skewY(12deg);
+    content:"";
+    right:0px;
+    position: absolute;
+    right:-18px;
+    bottom:0px;
+    bottom:20px
+}
+
+*/
+.block-with-description-and-date-and-name_arraw-on-left-side:after {
+    display:inline-block;
+    border-right:#353541 solid 40px;
+    border-top:15px solid;
+    border-bottom:solid 25px #353541;
+    border-left-color:transparent;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    content:"";
+    transform:skewY(12deg);
+    position: absolute;
+    left:0px;
+    top:0px;
+    left: -18px;
+    top: 20px;
+}
 
 
+.work-experience__experience-right-block {
+
+    padding:0px 0px 95px 0px;
+}
+
+/*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК EXPERIENCE*/
+
+/*НАЧАЛ ДЕЛАТЬ БЛОК EXPERINCE*/
+.education {
+    @extend .work-experience;
+}
+
+.education__left-block,
+.education__right-block {
+
+    @extend .work-experience__experience-left-block;
+}
+
+.education__right-block {
+    @extend .work-experience__experience-right-block;
+}
+
+
+/*ЗАКОНЧИЛ БЛОК EXPERINCE*/
