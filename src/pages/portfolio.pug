@@ -1,0 +1,174 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="style/animate-css.css" rel="stylesheet")
+        link(href="styles/portfolio.css" rel="stylesheet")
+        title="Портфолио"
+    body
+        input(type="checkbox" class="menu-button-input" id="menu-button-id")
+        label(for="menu-button-id" class="menu-button")
+            include ../image/menu-button.svg
+        nav.navigation
+            .navigation__head
+                label(for="menu-button-id" class="menu-buttom-close") 🞪
+                h4.name-author AL Rayhan
+                h5.profession UI/UX Expert
+            ul(class="navigation__listen-menu")
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Home
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") About Me
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Education
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Work Experience
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Skills
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Portfolio
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Contacts
+        header.header
+            .conteiner
+                .header__title
+                    h1.header__title-heading Lets Make Something Great
+                    p.header__title-description I'm an UI designer that prides ourself on being strategic brand partners and awesome product providers
+                    button.button Hire Me!
+        section.main
+            .conteiner
+                .portfolio
+                    .works
+                        .heading-block-name Portfolio
+                            .heading-block-name__border
+                        ul.categories
+                            li.categories__item
+                                a(href="" class="categories__item-link") Branding
+                            li.categories__item
+                                a(href="" class="categories__item-link") Web Design
+                            li.categories__item
+                                a(href="" class="categories__item-link") Animation
+                            li.categories__item
+                                a(href="" class="categories__item-link") UI/UX
+                                
+                    .work-examples
+                        .project
+                            .project__picture
+                                img(class="project__picture-img" src="image/picture-in-project-block__on-portfolio-page/pic1.png" alt="picture example works")
+                            .description
+                                h3.project__name Marketing Partner
+                                p.project__categorie Branding UI/UX Article
+                                a(class="project__link" href="") View Project
+                        .project
+                            .project__picture
+                                img(class="project__picture-img" src="image/picture-in-project-block__on-portfolio-page/pic2.png" alt="picture example works")
+                            .description.description_color-dark-blue
+                                h3.project__name Website Design
+                                p.project__categorie Branding UI/UX Article
+                                a(class="project__link" href="") View Project
+                        .project
+                            .project__picture
+                                img(class="project__picture-img" src="image/picture-in-project-block__on-portfolio-page/pic3.png" alt="picture example works")
+                            .description.description_color-dark-grey
+                                h3.project__name Music Player Design
+                                p.project__categorie Branding UI/UX Article
+                                a(class="project__link" href="") View Project
+                        .project
+                            .project__picture
+                                img(class="project__picture-img" src="image/picture-in-project-block__on-portfolio-page/pic4.png" alt="picture example works")
+                            div(class="description description_color-blue")
+                                h3.project__name Marketing Partner
+                                p.project__categorie Branding UI/UX Article
+                                a(class="project__link" href="") View Project
+                        .project
+                            .project__picture
+                                img(class="project__picture-img" src="image/picture-in-project-block__on-portfolio-page/pic5.png" alt="picture example works")
+                            div(class="description description_color-black")
+                                h3.project__name Marketing Partner
+                                p.project__categorie Branding UI/UX Article
+                                a(class="project__link" href="") View Project
+                        .project
+                            .project__picture
+                                img(class="project__picture-img" src="image/picture-in-project-block__on-portfolio-page/pic6.png" alt="picture example works")
+                            .description.description_color-cohabit
+                                h3.project__name Software Developement
+                                p.project__categorie Branding UI/UX Article
+                                a(class="project__link" href="") View Project
+            .leave-a-message-wrapper
+                    .conteiner
+                        .leave-a-message
+                            form(class="form")
+                                label.form-label Label a Message
+                                input(class="form__input-name" type="text" value="Name" name="input-name" onclick="this.value='';" onblur="this.value=!this.value?'Name':this.value;")
+                                input(class="form__input-email" type="text" value="Email" name="input-email" onclick="this.value='';" onblur="this.value=!this.value?'Email':this.value;")
+                                input(class="form__input-message" type="text" value="Message*" name="input-area-message" onclick="this.value='';" onblur="this.value=!this.value?'Message*':this.value;")
+                                input(class="button buttom_in-form" type="button" value="Hire Me!")
+                        .contact-information
+                            .contact-information__location
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/house.svg
+               
+                                .contact-information__description
+                                    h4.contact-information__description-heading Location
+                                    p.contact-information__description-info 324, Golden Tower, Amborkhana, Sylhet
+
+                            .contact-information__email
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/paper-plane.svg
+
+                                .contact-information__description
+                                    h4.contact-information__description-heading Email
+                                    p.contact-information__description-info junaed@deviserweb.com       
+
+
+                            .contact-information__toll-free-call
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/phone-call.svg
+
+                                .contact-information__description
+                                    h4.contact-information__description-heading Toll Free Call
+                                    p.contact-information__description-info 0800 234 6578
+
+        section.footer
+            .conteiner
+                .widgets
+                    .twitter-icon
+                        include ../image/icon-in-home-page-footer/twitter.svg
+                    .skype-icon
+                        include ../image/icon-in-home-page-footer/skype-logo.svg
+                    .dribbble-icon
+                        include ../image/icon-in-home-page-footer/dribbble-logo.svg
+            
+                p.rights Copyright: Junaed Ahmed. All rights reserved
+                
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+                        
+                         
+
+
+
+            
+
+
+
+
+
