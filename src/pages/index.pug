@@ -3,15 +3,39 @@ html(lang="eng-ru")
     head
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="animate-css.css" rel="stylesheet")
         link(href="styles/main.css" rel="stylesheet")
         title="Дипломный проект"
     body
+        input(type="checkbox" class="menu-button-input" id="menu-button-id")
+        label(for="menu-button-id" class="menu-button")
+            include ../image/menu-button.svg
+        nav.navigation
+            .navigation__head
+                label(for="menu-button-id" class="menu-buttom-close") 🞪
+                h4.name-author AL Rayhan
+                h5.profession UI/UX Expert
+            ul(class="navigation__listen-menu")
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Home
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") About Me
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Education
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Work Experience
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Skills
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Portfolio
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Contacts
         header.header
-            .conteiner 
+            .conteiner
                 .header__title
                     h1.header__title-heading Lets Make Something Great
                     p.header__title-description I'm an UI designer that prides ourself on being strategic brand partners and awesome product providers
-                    button.header__button Hire Me!
+                    button.button Hire Me!
         section.main
             .conteiner
                 .about-me
@@ -33,6 +57,7 @@ html(lang="eng-ru")
                             24, Gold Street, New
                     .about-me-photo
                         img.about-me-photo-image(src="image/photo-in-blocl-about-us.jpg")
+                        img.about-me-photo-image_smile(src="image/photo-in-blocl-about-us-smile.png")
                 .work-experience
                     h2.heading-block-name Work Experience
                         .heading-block-name__border
@@ -104,6 +129,101 @@ html(lang="eng-ru")
                                  @Academy
                             p.block-with-description-and-date-and-name__date JAN 2013 - DEC 2014
                             p.block-with-description-and-date-and-name__description Lorem ipsum dolor sit amet, consectetur et incididunt ut labore et dolorea.
+            .my-skills-wrapper
+                .conteiner
+                    .my-skills
+                        h2.heading-block-name.heading-block-name_color-white My Skills
+                            .heading-block-name__border
+                    
+                        .my-skills-item
+                            h3.my-skills-item__name User Experience
+                            progress.my-skills-item__progressBar.my_skills-item-name_progressBar_experience(value="90" max="100")
+                            span.my-skills-item__value 90%
+                        
+                        .my-skills-item
+                            h3.my-skills-item__name User Interface
+                            progress.my-skills-item__progressBar.my_skills-item-name_progressBar_interface(value="98" max="100")
+                            span.my-skills-item__value 98%
+
+                        .my-skills-item
+                            h3.my-skills-item__name Web Design
+                            progress.my-skills-item__progressBar.my_skills-item-name_progressBar_design(value="70" max="100")
+                            span.my-skills-item__value 70%
+
+                        .my-skills-item
+                            h3.my-skills-item__name User Experience
+                            progress.my-skills-item__progressBar.my_skills-item-name_progressBar_experience-in-right-column(value="90" max="100")
+                            span.my-skills-item__value 90%
+
+                        .my-skills-item
+                            h3.my-skills-item__name User Interface
+                            progress.my-skills-item__progressBar.my_skills-item-name_progressBar_interface-in-right-column(value="80" max="100")
+                            span.my-skills-item__value 80%
+
+                        .my-skills-item
+                            h3.my-skills-item__name Web Design
+                            progress.my-skills-item__progressBar.my_skills-item-name_progressBar_design-in-right-column(value="96" max="100")
+                            span.my-skills-item__value 96%
+
+            .leave-a-message-wrapper
+                    .conteiner
+                        .leave-a-message
+                            form(class="form")
+                                label.form-label Label a Message
+                                input(class="form__input-name" type="text" value="Name" name="input-name" onclick="this.value='';" onblur="this.value=!this.value?'Name':this.value;")
+                                input(class="form__input-email" type="text" value="Email" name="input-email" onclick="this.value='';" onblur="this.value=!this.value?'Email':this.value;")
+                                input(class="form__input-message" type="text" value="Message*" name="input-area-message" onclick="this.value='';" onblur="this.value=!this.value?'Message*':this.value;")
+                                input(class="button buttom_in-form" type="button" value="Hire Me!")
+                        .contact-information
+                            .contact-information__location
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/house.svg
+               
+                                .contact-information__description
+                                    h4.contact-information__description-heading Location
+                                    p.contact-information__description-info 324, Golden Tower, Amborkhana, Sylhet
+
+                            .contact-information__email
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/paper-plane.svg
+
+                                .contact-information__description
+                                    h4.contact-information__description-heading Email
+                                    p.contact-information__description-info junaed@deviserweb.com       
+
+
+                            .contact-information__toll-free-call
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/phone-call.svg
+
+                                .contact-information__description
+                                    h4.contact-information__description-heading Toll Free Call
+                                    p.contact-information__description-info 0800 234 6578
+
+        section.footer
+            .conteiner
+                .widgets
+                    .twitter-icon
+                        include ../image/icon-in-home-page-footer/twitter.svg
+                    .skype-icon
+                        include ../image/icon-in-home-page-footer/skype-logo.svg
+                    .dribbble-icon
+                        include ../image/icon-in-home-page-footer/dribbble-logo.svg
+            
+                p.rights Copyright: Junaed Ahmed. All rights reserved
+                
+
+
+             
+
+
+
+
+
+
+
+
+
 
 
 

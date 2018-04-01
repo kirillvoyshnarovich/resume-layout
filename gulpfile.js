@@ -22,7 +22,7 @@ gulp.task('sass', function () {  /*для gulp модуля подключаем
 
 
   gulp.task('image', function () {
-    gulp.src('./src/image/*')
+    gulp.src('./src/image/**/*')
       .pipe(image())
       .pipe(gulp.dest('./build/image'));
   });
