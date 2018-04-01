@@ -1,0 +1,162 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="styles/animate-css.css" rel="stylesheet")
+        link(href="styles/single-portfolio.css" rel="stylesheet")
+        title="Работа"
+    body
+        input(type="checkbox" class="menu-button-input" id="menu-button-id")
+        label(for="menu-button-id" class="menu-button")
+            include ../image/menu-button.svg
+        nav.navigation
+            .navigation__head
+                label(for="menu-button-id" class="menu-buttom-close") 🞪
+                h4.name-author AL Rayhan
+                h5.profession UI/UX Expert
+            ul(class="navigation__listen-menu")
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Home
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") About Me
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Education
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Work Experience
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Skills
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Portfolio
+                 li.navigation__listen-menu-item
+                     a(class="navigation__listen-menu-link" href="") Contacts
+        section.main
+            .conteiner
+                .job-presentation
+                    .job-presentation__picture
+                        img(class="job-presentation__picture-img" src="image/picture-on-single-portfolio-page.jpg")
+                    .job-presentation__description
+                        h2.job-presentation__description-title Leading University Website Design
+                        p.job-presentation__description-categorie Branding UI/UX Article
+
+                .description
+                    .description__block-with-text.description__block-with-text_width-445.
+                       Turnip greens yarrow ricebean rutabaga endive cauliflower
+                       sea lettuce kohlrabi amaranth water spinach avocado daikon
+                       napa cabbage asparagus winter purslane kale. Celery potato
+                       scallion desert raisin horseradish spinach carrot soko. Lotus
+                       root water spinach fennel kombu.
+
+                    .description__block-with-text.description__block-with-empty.
+
+
+                    .description__block-with-text.description__block-with-text_width-360.
+                         Huatt wisi enim ad minim veniam, quis nostrud
+                         exerci tation ullamcorper suscipit lobortis nisl ut
+                         aliquip ex ea commodo consequat. Duis autem
+                         vel eum iriure dolor in hendrerit in vulputate velit
+                         esse molestie consequat, vel illum dolore eu
+                         feugiat nulla facilisis at vero eros etaccumsan et
+                         iusto odio dignissim qui blandit
+
+
+                    .description__block-with-text.description__block-with-text_width-550.
+                        Eraesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi
+                        Nam liber tempor cum soluta nobis eleifend option congue nihit nihil imperdiet
+                        doming id quod mazim placerat facer possim assum. Typi non habent
+                        claritatem insitam.
+
+
+                .comments
+                    .comments__counter Comments (2)
+
+                    .comments__block-with-comment
+                        .comments__comment
+                            .comments__comment-picture
+                                img(class="comments__comment-picture-img")
+                            .comments__comment-name Junaed Ahmed Numan
+                            .comments__comment-date Jan 18th 2015
+                            .comments__comment-text Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper ullamcorper suscipi dolor sit amet, consectetuer adipiscing elit.
+                        .comments__reply
+                            .comments__comment-picture
+                                img(class="comments__comment-picture-img")
+                            .comments__comment-name Angelina Zolie
+                            .comments__comment-date Jan 18th 2015
+                            .comments__comment-text Terisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipi dolor sit amet
+            .leave-a-message-wrapper
+                    .conteiner
+                        .leave-a-message
+                            form(class="form")
+                                label.form-label Label a Message
+                                input(class="form__input-name" type="text" value="Name" name="input-name" onclick="this.value='';" onblur="this.value=!this.value?'Name':this.value;")
+                                input(class="form__input-email" type="text" value="Email" name="input-email" onclick="this.value='';" onblur="this.value=!this.value?'Email':this.value;")
+                                input(class="form__input-message" type="text" value="Message*" name="input-area-message" onclick="this.value='';" onblur="this.value=!this.value?'Message*':this.value;")
+                                input(class="button buttom_in-form" type="button" value="Hire Me!")
+                        .contact-information
+                            .contact-information__location
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/house.svg
+               
+                                .contact-information__description
+                                    h4.contact-information__description-heading Location
+                                    p.contact-information__description-info 324, Golden Tower, Amborkhana, Sylhet
+
+                            .contact-information__email
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/paper-plane.svg
+
+                                .contact-information__description
+                                    h4.contact-information__description-heading Email
+                                    p.contact-information__description-info junaed@deviserweb.com       
+
+
+                            .contact-information__toll-free-call
+                                .contact-information__icon
+                                    include ../image/icon-for-home-page/phone-call.svg
+
+                                .contact-information__description
+                                    h4.contact-information__description-heading Toll Free Call
+                                    p.contact-information__description-info 0800 234 6578
+
+        section.footer
+            .conteiner
+                .widgets
+                    .twitter-icon
+                        include ../image/icon-in-home-page-footer/twitter.svg
+                    .skype-icon
+                        include ../image/icon-in-home-page-footer/skype-logo.svg
+                    .dribbble-icon
+                        include ../image/icon-in-home-page-footer/dribbble-logo.svg
+            
+                p.rights Copyright: Junaed Ahmed. All rights reserved
+                
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+                        
+                         
+
+
+
+            
+
+
+
+
+
