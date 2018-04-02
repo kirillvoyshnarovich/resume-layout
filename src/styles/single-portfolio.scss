@@ -70,7 +70,17 @@ body {
     }
 }
 
-
+.button {
+    padding:17px 44px 17px 44px;
+    background-color:#fb6470;
+    font-size:1.7rem;
+    border:none;
+    border-radius: 3px;
+    font-family: Raleway-Medium;
+    color:#ffffff;
+    margin-top: 20px;
+    line-height: 0.6;
+}
 
 /*НАЧАЛ ДЕЛАТЬ MENU*/
 
@@ -108,7 +118,7 @@ body {
 .navigation {
     box-sizing:border-box;
     width: 275px;
-    height: 2318.57px;/*Не задается высота отностельно body почему?*/
+    height: 2452.1px;/*Не задается высота отностельно body почему?*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -185,62 +195,71 @@ body {
 /*ЗАКОНЧИЛ ДЕЛАТЬ МЕНЮ*/
 
 /*НАЧАЛ ДЕЛАТЬ JOB PRESENTATION*/
-.job-presentation__description-title {
-    font-size:2.5rem;
-    color: #ffffff;
-    line-height:1;
-    margin:0px;
-}
-
-.job-presentation__description-categorie {
-    font-size:1.3rem;
-    color:#e1e3e4;
-    line-height: 1;
-    margin: 15px 0px 0px 0px;
-}
 
 .job-presentation__picture {
     width:100%;
     height:445px;
-}
-.job-presentation__picture-img {
-    max-width:100%;
-    height:auto;
+
+    .job-presentation__picture-img {
+        max-width:100%;
+        height:auto;
+    }
+    
 }
 
 .job-presentation__description {
     background-color:#3d4f59;
     padding:30px 20px 25px 15px;
     font-family: Raleway-Medium;
-}
-.description__block-with-text {
-    margin-top:40px;
+
+    .job-presentation__description-title {
+        font-size:2.5rem;
+        color: #ffffff;
+        line-height:1;
+        margin:0px;
+        font-weight:500;
+    }
+
+    .job-presentation__description-categorie {
+        font-size:1.3rem;
+        color:#e1e3e4;
+        line-height: 1;
+        margin: 15px 0px 0px 0px;
+    }
 }
 
-.description__block-with-text_width-445 {
-    width:60.13513513513514%
-}
-.description__block-with-text_width-360 {
-    width:48.64864864864865%;
-}
-.description__block-with-text_width-550 {
-    width:74.32432432432432%;
-}
-.description__block-with-empty {
-    height:189px;
+.description {
+    padding:40px 0px 80px 0px;
+    color:#6e6e6e;
+    font-size:1.3rem;
+    font-family: Raleway-Regular;
+
+    .description__block-with-empty {
+        height:189px;
+    }
+
+    .description__block-with-text_width-445 {
+        width:60.13513513513514%
+    }
+    .description__block-with-text_width-360 {
+        width:48.64864864864865%;
+    }
+    .description__block-with-text_width-550 {
+        width:74.32432432432432%;
+        margin-top:50px;
+        
+    }
 }
 /*ЗАКОНЧИЛ JOB PRESENTATION*/
 
 /*НАЧАЛ ДЕЛАТЬ БЛОК DESCRIPTION*/
-.description {
-    color:#6e6e6e;
-    font-size:1.3rem;
-    font-family: Raleway-Regular;
-}
+
 
 /*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК DESCRIPTION*/
 
 /*БЛОК COMMENTS*/
+
+
 .comments__counter {
     display:inline-block;
     padding:16px 20px 14px 20px;
@@ -251,29 +270,105 @@ body {
     font-family: Cabin-Italic;
 }
 
-.comments__comment-picture {
-    width:75px;
-    height:75px;
-    background-color:#353541;
+
+.comments__block-with-comment {
+    padding:50px 0px 50px 0px;
+
+    .comments__comment-picture {
+        width:75px;
+        height:75px;
+        background-color:#353541;
+        margin-right: 20px;
+    }
+
+    .comments__comment-block-with-text {
+        width:70%;
+    
+        .comments__comment-name {
+            font-size:1.5rem;
+            font-family: Raleway-Medium;
+            color:#333333;
+            font-weight:500;
+            display: inline-block;
+            line-height:1.8;
+        }
+    
+        .comments__comment-date{
+            font-size:1.3rem;
+            color:#656565;
+            display: inline-block;
+            margin-left: 20px;
+            font-family: Raleway-Regular;
+        }
+    
+        .comments__comment-text {
+            font-size:1.4rem;
+            color:#656565;
+            font-family: Raleway-Regular;
+            line-height:1.8;  
+        }
+    
+    }
+
+    .comments__reply {
+        flex-wrap:wrap;
+        margin-top:40px;
+        margin-left:95px;
+
+        .comments__comment-heading {
+            width:100%;
+            font-size:1.3rem;
+            font-family: Raleway-Medium;
+            margin:0px;
+            margin-bottom:1.8rem;
+            margin-left:30px;
+        }
+    }
+    
 }
 
-.comments__comment-name {
-    font-size:1.5rem;
-    font-family: Raleway-Medium;
-    color:#6e6e6e;
-    font-weight:700;
+
+.comments__comment,
+.comments__reply {
+    display:flex;
+    
 }
 
-.comments__comment-text {
-    font-size:1.3rem;
-    color:#656565;
+
+
+
+
+.comments__add {
+    width:42.16216216216216%;
+    
+    .comments__form-email,
+    .comments__form-comment {
+    font-family: Cabin-Italic;
+    color:#8e8e8e;
+    font-size:1.1rem;
+    width:100%;
+    padding:17px 0px 17px 23px;
+    line-height:1;
+    }
+
+    .comments__form-submit {
+        font-family: Raleway-Medium;
+        font-size:1.5rem;
+        color:#ffffff;
+        padding:15px 125px 18px 125px;
+        background-color:#333333;
+        border:none;
+        margin-top:15px;
+    }
+
+    .comments__form-comment {
+        height:160px;
+        margin-top:15px;
+    }
+
 }
 
-.comments__comment-date{
-    font-size:1.3rem;
-    color:#656565;
 
-}
 /*ЗАКОНЧИЛ ДЕЛАТЬ COMMENTS*/
 
 

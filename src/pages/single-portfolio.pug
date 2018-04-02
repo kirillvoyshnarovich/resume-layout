@@ -74,15 +74,24 @@ html(lang="eng-ru")
                         .comments__comment
                             .comments__comment-picture
                                 img(class="comments__comment-picture-img")
-                            .comments__comment-name Junaed Ahmed Numan
-                            .comments__comment-date Jan 18th 2015
-                            .comments__comment-text Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper ullamcorper suscipi dolor sit amet, consectetuer adipiscing elit.
+                            .comments__comment-block-with-text
+                                .comments__comment-name Junaed Ahmed Numan
+                                .comments__comment-date Jan 18th 2015
+                                .comments__comment-text Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper ullamcorper suscipi dolor sit amet, consectetuer adipiscing elit.
                         .comments__reply
+                            p.comments__comment-heading Replay
                             .comments__comment-picture
                                 img(class="comments__comment-picture-img")
-                            .comments__comment-name Angelina Zolie
-                            .comments__comment-date Jan 18th 2015
-                            .comments__comment-text Terisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipi dolor sit amet
+                            .comments__comment-block-with-text
+                                .comments__comment-name Angelina Zolie
+                                .comments__comment-date Jan 18th 2015
+                                .comments__comment-text Terisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipi dolor sit amet
+                    .comments__add
+                        form.comments__form
+                            input(class="comments__form-email" type="text" value="Email*" onclick="this.value='';" onblur="this.value=!this.value?'Email*':this.value;")
+                            textarea.comments__form-comment Comment*
+                            //Как убрать текстовое значение в поле ввода для многострочного комментария
+                            input(class="comments__form-submit" type="submit" value="Submit")
             .leave-a-message-wrapper
                     .conteiner
                         .leave-a-message
