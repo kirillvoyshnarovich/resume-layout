@@ -514,6 +514,7 @@ h2.heading-block-name {
     .conteiner {
     display:flex;
     justify-content: space-around;
+    
 
             .leave-a-message {
         width:50%;
@@ -833,6 +834,18 @@ h2.heading-block-name {
     .contact-information__description {
         margin-left: 25px;
     }
+
+    .leave-a-message-wrapper .conteiner .leave-a-message .form {
+        padding-right: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right:40px;
+        justify-content: flex-end;
+    }
+
+    .buttom_in-form {
+        float: right;
+    }
 }
 
 @media (max-width:730px) {
@@ -970,6 +983,23 @@ h2.heading-block-name {
 
    .leave-a-message-wrapper .conteiner .contact-information {
     font-size: 1.2rem;
+   }
+   
+
+   .leave-a-message-wrapper {
+       .conteiner {
+           flex-wrap:wrap;
+
+           .leave-a-message {
+               width:100%;
+           }
+
+           .contact-information {
+               width:100%;
+               border-left:none;
+               margin-top:30px;
+           }
+       }
    }
 
 }
