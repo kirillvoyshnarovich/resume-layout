@@ -603,3 +603,143 @@ body {
 
 /*ЗАКОНЧИЛ ДЕЛАТЬ FOOTER*/
 
+
+
+/*АДАПТИВ*/
+
+
+@media (max-width:900px) {
+    .menu-button {
+        left: 20px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .conteiner {
+        width:90vw;
+
+    }
+
+
+    .leave-a-message-wrapper {
+        
+        .conteiner{
+
+            .contact-information {
+                padding: 0px 0px 0px 15px;
+            }
+            
+
+            .leave-a-message {
+                .form {
+                    display:flex;
+                    justify-content: flex-end;
+                    flex-wrap:wrap;
+                    padding-right:30px;
+                }
+            }
+        }
+    
+    
+    }
+
+    .contact-information__description {
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    .information__description {
+        margin-left:15px;
+    }
+}
+
+@media (max-width:620px) {
+    .leave-a-message-wrapper .conteiner {
+        flex-wrap:wrap;
+
+        .leave-a-message {
+            width:100%;
+        }
+
+        .contact-information {
+            width:100%;
+            border-left:none;
+            margin-top:30px;
+        }
+
+    
+    }
+
+    .header .header__title .header__title-heading {
+        font-size: 3.2rem;
+    }
+
+    .work-examples .project {
+        width:100%;
+    }
+
+    .work-examples .project {
+        width:65%;
+        margin:0 auto;
+        margin-top:20px;
+    }
+
+    .menu-button {
+        top:20px;
+    }
+
+    .header .header__title {
+        padding: 85px 0px 85px 0px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .header .header__title .header__title-heading {
+        font-size: 2.7rem;
+    }
+
+    .header .header__title .header__title-description {
+        width: 325px;
+    }
+
+    .work-examples .project {
+        width: 80%;
+    }
+
+    .work-examples .project .project__picture {
+        height:auto;
+    }
+
+    .work-examples .description {
+        position: relative;
+        top: -3px;
+    }
+
+    .button {
+        padding: 12px 24px 12px 24px;
+    }
+
+    .categories {
+        flex-direction: column;
+
+        .categories__item{
+            margin:0 auto;
+            margin-top: 10px;
+            width:35%;
+        }
+    }
+
+}
+
+@media (max-width:450px) {
+    .header .header__title .header__title-heading {
+        font-size: 2.1rem;
+    }
+
+    .header .header__title .header__title-description {
+        width: 275px;
+    }
+
+}
