@@ -239,7 +239,7 @@ body {
     }
 
     .description__block-with-text_width-445 {
-        width:60.13513513513514%
+        width:60.13513513513514%;
     }
     .description__block-with-text_width-360 {
         width:48.64864864864865%;
@@ -620,4 +620,153 @@ body {
 /*ЗАКОНЧИЛ ДЕЛАТЬ hover ДЛЯ widgets*/
 
 /*ЗАКОНЧИЛ ДЕЛАТЬ FOOTER*/
+
+
+/*АДАПТИВ*/
+
+
+@media (max-width:1200px) {
+    .job-presentation__picture {
+        height: auto;
+        z-index:900;
+    }
+
+    .job-presentation__description {
+        position: relative;
+        top: -5px;
+        z-index:900;
+    }
+
+    .menu-button {
+        left: 20px;
+        top: 20px;
+    }
+}
+
+@media(max-width:900px) {
+    .menu-button {
+        left: 10%;
+        top: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .conteiner {
+        width:90vw;
+    }
+
+    .description {
+        padding:40px 0px 80px 0px;
+        color:#6e6e6e;
+        font-size:1.3rem;
+        font-family: Raleway-Regular;
+    
+        .description__block-with-empty {
+            height:189px;
+        }
+    
+        .description__block-with-text_width-445 {
+            width:100%;
+        }
+        .description__block-with-text_width-360 {
+            width:100%;
+        }
+        .description__block-with-text_width-550 {
+            width:100%;
+            margin-top:50px;
+            
+        }
+    }
+
+    .comments__add {
+        width: 90%;
+        margin: 0 auto;
+        .comments__form-email,
+        .comments__form-comment {
+            box-sizing:border-box;
+        }
+    }
+
+    .leave-a-message-wrapper{
+        .conteiner {
+            flex-wrap:wrap;
+                .leave-a-message {
+                    width:100%;
+                    .form {
+                        padding-right: 30px;
+                        display:flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        .buttom_in-form {
+                            padding: 18px 35px 18px 35px;
+                            font-size: 1.8rem;
+                    }
+                        .form-label {
+                            margin-left: 5%;
+                    }
+                }
+            }
+
+            .contact-information {
+                width:100%;
+                border-left:none;
+                margin-top:30px;
+            }
+
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    .comments__block-with-comment {
+        .comments__comment-block-with-text {
+            width:100%;
+            .comments__comment-text {
+                font-size:1.2rem;
+            }
+
+        }
+        .comments__reply {
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+    }
+
+    .comments__comment {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .comments__add{ 
+        .comments__form-submit{
+            padding: 15px 100px 18px 100px;
+        }
+    }
+
+    .leave-a-message-wrapper {
+        .conteiner {
+            flex-wrap:wrap;
+ 
+            .leave-a-message {
+                width:100%;
+                .form {
+                    padding-right: 15px
+                }
+            }
+        
+            .contact-information {
+                width:100%;
+                border-left:none;
+                margin-top:30px;
+                padding: 0px 0px 0px 20px;
+                font-size: 1.2rem;
+                .contact-information__description {
+                    margin-left: 25px;
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
 

@@ -620,42 +620,24 @@ body {
         width:90vw;
     }
 
-    .leave-a-message-wrapper { 
-
-        .conteiner{
-
-            .contact-information {
-                padding: 0px 0px 0px 15px;
-                .contact-information__description {
-                    margin-left: 15px;
-                    width: 80%;
-                }
-
-            }
-            
-            .leave-a-message {
-                .form {
-                    display:flex;
-                    justify-content: flex-end;
-                    flex-wrap:wrap;
-                    padding-right:30px;
-                }
-            }
-        }
-    
-    }
-
-
-
-@media (max-width:620px) {
-
-    .leave-a-message-wrapper {
-
-         .conteiner {
+    .leave-a-message-wrapper{
+        .conteiner {
             flex-wrap:wrap;
-         
-            .leave-a-message {
-                width:100%;
+                .leave-a-message {
+                    width:100%;
+                    .form {
+                        padding-right: 30px;
+                        display:flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        .buttom_in-form {
+                            padding: 18px 35px 18px 35px;
+                            font-size: 1.8rem;
+                    }
+                        .form-label {
+                            margin-left: 5%;
+                    }
+                }
             }
 
             .contact-information {
@@ -663,8 +645,36 @@ body {
                 border-left:none;
                 margin-top:30px;
             }
+
         }
+    }
 }
+@media (max-width:620px) {
+
+    .leave-a-message-wrapper {
+        .conteiner {
+            flex-wrap:wrap;
+ 
+            .leave-a-message {
+                width:100%;
+                .form {
+                    padding-right: 15px
+                }
+            }
+        
+            .contact-information {
+                width:100%;
+                border-left:none;
+                margin-top:30px;
+                padding: 0px 0px 0px 20px;
+                font-size: 1.2rem;
+                .contact-information__description {
+                    margin-left: 25px;
+                    width: 75%;
+                }
+            }
+        }
+    }
 
     .work-examples .project {
         width:65%;
@@ -676,7 +686,7 @@ body {
         top:20px;
     }
 
-.header {
+    .header {
 
         .header__title {
             padding: 85px 0px 85px 0px;
@@ -686,12 +696,12 @@ body {
             font-size: 3.2rem;
         }
 
+    }
 }
-
 
 @media (max-width:550px) {
 
-.header { 
+    .header { 
 
         .header__title {
 
@@ -703,9 +713,9 @@ body {
                 width: 325px;
             } 
         } 
-}
+    }
 
-.work-examples {
+    .work-examples {
         .project {
             width: 80%;
             .project__picture {
@@ -717,22 +727,48 @@ body {
                 top: -3px;
             }   
         }
-}
+    }
   
-.button {
+    .button {
         padding: 12px 24px 12px 24px;
-}
+    }
 
-.categories {
+    .categories {
         flex-direction: column;
 
-    .categories__item {
-         margin:0 auto;
-         margin-top: 10px;
-         width:35%;
+        .categories__item {
+            margin:0 auto;
+            margin-top: 10px;
+            width:35%;
         }
-}
+    }
 
+    .leave-a-message-wrapper {
+        .conteiner {
+            flex-wrap:wrap;
+ 
+            .leave-a-message {
+                width:100%;
+                .form {
+                    padding-right: 15px
+                }
+            }
+        
+            .contact-information {
+                width:100%;
+                border-left:none;
+                margin-top:30px;
+                padding: 0px 0px 0px 20px;
+                font-size: 1.2rem;
+                .contact-information__description {
+                    margin-left: 25px;
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+}
 
 @media (max-width:450px) {
 
@@ -743,8 +779,6 @@ body {
     .header .header__title .header__title-description {
         width: 275px;
     }
+  
+}
 
-}
-}
-}
-}

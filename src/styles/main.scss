@@ -804,48 +804,54 @@ h2.heading-block-name {
     }
 
 
-        .about-me-photo{
-            padding-left:0px;
+    .about-me-photo{
+        padding-left:0px;
 
-             .about-me-photo-image {
-                height: auto;
-                width: 320px;
-                margin-left:40px;
+        .about-me-photo-image {
+            height: auto;
+            width: 320px;
+            margin-left:40px;
 
          }
 
-            .about-me-photo-image_smile {
-                width: 320px;
-                left:40px;
-                position: absolute;
-                max-width:none;
+        .about-me-photo-image_smile {
+            width: 320px;
+            left:40px;
+            position: absolute;
+            max-width:none;
             
         }
     }
 
-    .contact-information__description {
-        width: 75%;
+    .leave-a-message-wrapper{
+        .conteiner {
+            flex-wrap:wrap;
+                .leave-a-message {
+                    width:100%;
+                    .form {
+                        padding-right: 30px;
+                        display:flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        .buttom_in-form {
+                            padding: 18px 35px 18px 35px;
+                            font-size: 1.8rem;
+                    }
+                        .form-label {
+                            margin-left: 5%;
+                    }
+                }
+            }
+
+            .contact-information {
+                width:100%;
+                border-left:none;
+                margin-top:30px;
+            }
+
+        }
     }
 
-    .leave-a-message-wrapper .conteiner .contact-information {
-        padding: 0px 0px 0px 35px;
-    }
-
-    .contact-information__description {
-        margin-left: 25px;
-    }
-
-    .leave-a-message-wrapper .conteiner .leave-a-message .form {
-        padding-right: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        padding-right:40px;
-        justify-content: flex-end;
-    }
-
-    .buttom_in-form {
-        float: right;
-    }
 }
 
 @media (max-width:730px) {
@@ -937,13 +943,12 @@ h2.heading-block-name {
 
     .work-experience__experience-left-block,
     .work-experience__experience-right-block {
-
-    width:83%;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    padding:20px 0px 0px 0px;
-    margin:0 auto;
+        width:83%;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding:20px 0px 0px 0px;
+        margin:0 auto;
     
    }
 
@@ -973,34 +978,6 @@ h2.heading-block-name {
        display:none;
    }
 
-   .leave-a-message-wrapper .conteiner .contact-information {
-    padding: 0px 0px 0px 20px;
-   }
-
-   .contact-information__description {
-    margin-left: 25px;
-   }
-
-   .leave-a-message-wrapper .conteiner .contact-information {
-    font-size: 1.2rem;
-   }
-   
-
-   .leave-a-message-wrapper {
-       .conteiner {
-           flex-wrap:wrap;
-
-           .leave-a-message {
-               width:100%;
-           }
-
-           .contact-information {
-               width:100%;
-               border-left:none;
-               margin-top:30px;
-           }
-       }
-   }
 
 }
 
@@ -1008,6 +985,31 @@ h2.heading-block-name {
 @media (max-width:550px) {
     .my-skills-wrapper .my-skills .my-skills-item {
         width: 85%;
+    }
+
+    .leave-a-message-wrapper {
+        .conteiner {
+            flex-wrap:wrap;
+ 
+            .leave-a-message {
+                width:100%;
+                .form {
+                    padding-right: 15px
+                }
+            }
+        
+            .contact-information {
+                width:100%;
+                border-left:none;
+                margin-top:30px;
+                padding: 0px 0px 0px 20px;
+                font-size: 1.2rem;
+                .contact-information__description {
+                    margin-left: 25px;
+                    width: 75%;
+                }
+            }
+        }
     }
 }
 
