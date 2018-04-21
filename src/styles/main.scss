@@ -501,9 +501,13 @@ h2.heading-block-name {
 }
 
 .my-skills-item__progressBar::-moz-progress-bar {
-    background:#e85662;
+    background:#e85662; 
 }
 
+
+.my-skills-item__progressBar::-webkit-progress-value {
+    background:#e85662;
+}
 /*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК MY SKILLS*/
 
 /*НАЧАЛ ДЕЛАТЬ LEAVE A MESSAGE*/
