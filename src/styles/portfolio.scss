@@ -156,7 +156,7 @@ body {
 .navigation {
     box-sizing:border-box;
     width: 275px;
-    height: 2318.57px;/*Не задается высота отностельно body почему?*/
+    min-height:1000%;/*Не задается высота отностельно body почему?*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -635,7 +635,7 @@ body {
 @media (max-width:800px) {
 
     .conteiner {
-        width:90vw;
+        width:93vw;
     }
 
     .leave-a-message-wrapper{
@@ -791,7 +791,7 @@ body {
 @media (max-width:450px) {
 
     .header .header__title .header__title-heading {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
     .header .header__title .header__title-description {

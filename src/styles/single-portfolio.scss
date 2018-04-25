@@ -118,7 +118,7 @@ body {
 .navigation {
     box-sizing:border-box;
     width: 275px;
-    height: 2452.1px;/*Не задается высота отностельно body почему?*/
+    min-height:1000%;/*Не задается высота отностельно body почему?*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -652,7 +652,7 @@ body {
 
 @media (max-width:800px) {
     .conteiner {
-        width:90vw;
+        width:93vw;
     }
 
     .description {
