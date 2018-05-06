@@ -81,6 +81,7 @@ body {
             font-size:3.7rem;
             font-family: Raleway-SemiBold;
             line-height: 0;
+            display:none;
         
         }
 
@@ -153,7 +154,7 @@ body {
 .navigation {
     box-sizing:border-box;
     width: 275px;
-    min-height: 1000%;/*Не задается высота отностельно body почему?*/
+    min-height: 550%;/*Не задается высота отностельно body почему?*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -786,6 +787,12 @@ h2.heading-block-name {
         transform: translateX(275px);
         transition:  0.3s;
     }
+
+    .navigation {
+
+        min-height: 750%;/*Не задается высота отностельно body почему?*/
+     
+    }
 }
 
 
@@ -925,7 +932,7 @@ h2.heading-block-name {
 
     .header .header__title {
         .header__title-heading {
-            font-size: 2.7rem;
+            font-size: 2.5rem;
         }
 
         .header__title-description {
@@ -981,6 +988,11 @@ h2.heading-block-name {
    .block-with-description-and-date-and-name::after {
        display:none;
    }
+
+   .navigation {
+        min-height: 900%;
+ 
+    }
 
 
 }
@@ -1050,5 +1062,10 @@ h2.heading-block-name {
 
         }
     }
+
+    .navigation {
+        min-height: 1000%;
+    }
+
 
 }
