@@ -807,6 +807,10 @@ h2.heading-block-name {
         left:100px; 
     }
 
+    .navigation {
+        min-height: 760%;
+    }
+
 }
 
 @media (max-width:800px) {
@@ -818,6 +822,10 @@ h2.heading-block-name {
 
     .menu-button {
         left: 30px;
+    }
+
+    .navigation {
+        min-height: 800%;
     }
 
 
@@ -895,6 +903,10 @@ h2.heading-block-name {
         .header__title-heading {
             font-size: 3.2rem;
         }
+    }
+
+    .navigation {
+        min-height: 820%;
     }
 }
 
@@ -1026,6 +1038,10 @@ h2.heading-block-name {
                 width:430px;
             }
         }
+    }
+
+    .navigation {
+        min-height: 920%;
     }
 
     .leave-a-message-wrapper {
