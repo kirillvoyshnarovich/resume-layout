@@ -81,8 +81,14 @@ body {
             font-size:3.7rem;
             font-family: Raleway-SemiBold;
             line-height: 0;
-            display:none;
-        
+        }
+
+        #lineDrawing {
+            height:42px;
+            width:630px;
+            fill:none;
+            stroke:#ffffff;
+            stroke-width: 0.3px;
         }
 
         .header__title-description {

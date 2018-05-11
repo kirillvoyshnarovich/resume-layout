@@ -4,6 +4,8 @@ const pug = require('gulp-pug');
 const image = require('gulp-image');
 const browserSync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+
 
 
 gulp.task('sass', function () {  /*для gulp модуля подключаем задачу под название 'sass' */
@@ -47,14 +49,25 @@ gulp.task('sass', function () {  /*для gulp модуля подключаем
 });
 
 
-gulp.task('watch', ['sass', 'pug', 'image','fonts', 'browserSync'], function () {
+gulp.task('compress', function () {
+  // returns a Node.js stream, but no handling of error messages
+  return gulp.src('./src/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'));
+});
+
+
+gulp.task('watch', ['sass', 'pug', 'image','fonts', 'browserSync', 'compress', ], function () {
   gulp.watch('./src/styles/*.scss', ['sass']);
   gulp.watch('./src/pages/*.pug', ['pug']);
+  gulp.watch('./src/js/*.js', ['compress']) ;
   gulp.watch('./src/image/*', ['image']);
   gulp.watch('./src/fonts/**/*', ['fonts']);
   gulp.watch('build/*.html', browserSync.reload);
   gulp.watch("./build/css/**/*.css").on("change", browserSync.reload);
   gulp.watch('./build/js/**/*.js').on("change", browserSync.reload);
+ 
+  
 });
 
 

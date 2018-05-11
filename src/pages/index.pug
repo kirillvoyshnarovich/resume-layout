@@ -33,9 +33,9 @@ html(lang="eng-ru")
         header.header
             .conteiner
                 .header__title
-                    h1.header__title-heading 
-                        svg( style="stroke:red;width:700px;align-text:center;")
-                            text(x="85" y="25" style="font-size:3.7rem;stroke-width:1px;margin:0 auto;fill:none;") Lets Make Something Great
+                    //h1.header__title-heading Lets Make Something
+                    div#lineDrawing
+                        include ../image/inscription-header.svg
                     p.header__title-description I'm an UI designer that prides ourself on being strategic brand partners and awesome product providers
                     button.button Hire Me!
         section.main
@@ -213,7 +213,9 @@ html(lang="eng-ru")
                         include ../image/icon-in-home-page-footer/dribbble-logo.svg
             
                 p.rights Copyright: Junaed Ahmed. All rights reserved
-                
+        script(src="js/anime-master/anime-master/anime.min.js")
+        script(src="js/javascript.js")
+    
 
 
              
