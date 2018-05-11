@@ -898,6 +898,17 @@ h2.heading-block-name {
     }
 }
 
+
+@media (max-width:650px) {
+    .header {
+        .header__title{
+            #lineDrawing {
+                width:480px;
+            }
+        }
+    }
+}
+
 @media (max-width:620px) {
     .about-me {
         flex-wrap:wrap;
@@ -1009,6 +1020,14 @@ h2.heading-block-name {
         width: 85%;
     }
 
+    .header {
+        .header__title{
+            #lineDrawing {
+                width:430px;
+            }
+        }
+    }
+
     .leave-a-message-wrapper {
         .conteiner {
             flex-wrap:wrap;
@@ -1043,6 +1062,10 @@ h2.heading-block-name {
                 font-size: 2.3rem;
             }
 
+            #lineDrawing {
+                width:380px;
+            }
+                
             .header__title-description {
                 width: 295px;
                 line-height: 2;
@@ -1056,6 +1079,10 @@ h2.heading-block-name {
 
     .header {
         .header__title {
+
+            #lineDrawing {
+                width:320px;
+            }
 
             .header__title-heading {
                 font-size: 2rem;
