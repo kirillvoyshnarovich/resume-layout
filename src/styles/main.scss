@@ -28,6 +28,7 @@ html {
 
 body {
     margin:0px;
+    position:relative;
 }
 
 .conteiner {
@@ -67,13 +68,12 @@ body {
 
 .header {
     background-color:#353541;
-    color:#ffffff;
 
     .header__title {
         display:flex;
         justify-content: center;
         flex-direction: column;
-        color:#ffffff;
+        color:#d8d8da;
         align-items: center;
         padding:115px 0px 115px 0px;
 
@@ -84,10 +84,9 @@ body {
         }
 
         #lineDrawing {
-            height:42px;
+            height:auto;
             width:630px;
             fill:none;
-            stroke:#ffffff;
             stroke-width: 0.3px;
         }
 
@@ -160,7 +159,7 @@ body {
 .navigation {
     box-sizing:border-box;
     width: 275px;
-    min-height: 550%;/*Не задается высота отностельно body почему?*/
+    min-height: 100%;/*Не задается высота отностельно body почему?*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -205,15 +204,17 @@ body {
 
 }
 
+.wrapper-button {
+    position: relative;
+}
 
 .menu-button {
     display:block;
     width:45px;
-    height:0px;
     fill:#fb6470;
-    position: relative;
+    position: absolute;
     top: 60px;
-    left:150px;
+    left:100px;
 }
 
 .menu-buttom-close {
@@ -297,9 +298,12 @@ body {
         top: 0px;
         left: 13.6%;
         opacity: 0;
-        filter:alpha(opacity=0);
-         }
+        }
 
+}
+
+.about-me-photo-image_visible {
+    opacity:1 !important;
 }
 
 
@@ -307,18 +311,15 @@ body {
 .about-me-photo:hover 
 .about-me-photo-image_smile {
     opacity:1;
-    filter:alpha(opacity=100);
-    transition: 2s;
-    -webkit-transition:none 3s linear;
-     -moz-transition:none 3s linear;
-     -o-transition:none 3s linear;
-     transition:none 3s linear;
+    // -webkit-transition:opacity 0.1s linear;
+    //  -moz-transition:opacity 0.1s linear;
+    //  -o-transition:opacity 0.1s linear;
+    //  transition:opacity 0.1s linear;
 }
 
 .about-me-photo:hover 
 .about-me-photo-image {
     opacity:0;
-    filter:alpha(opacity=0);
 }
 
 /*ЗАКОНЧИЛ HOVER ДЛЯ КАРТИНКИ*/
@@ -507,14 +508,23 @@ h2.heading-block-name {
     color:#ffffff;
 }
 
+.my-skills-item__progressBar::-webkit-progress-value {
+    background:#e85662; 
+}
+
+
 .my-skills-item__progressBar::-moz-progress-bar {
     background:#e85662; 
 }
 
 
-.my-skills-item__progressBar::-webkit-progress-value {
+.my-skills-item__progressBar::-ms-fill  {    //background for IE and Edge progress bar
     background:#e85662;
 }
+
+
+
+
 /*ЗАКОНЧИЛ ДЕЛАТЬ БЛОК MY SKILLS*/
 
 /*НАЧАЛ ДЕЛАТЬ LEAVE A MESSAGE*/
@@ -571,9 +581,14 @@ h2.heading-block-name {
 
 .form__input-message {
     @extend .form__input-name;
-    padding:3px 0px 70px 13px;
+    padding:3px 0px 5px 13px;
     margin-bottom: 25px;
-   
+    height:100px;
+    min-height:100px;
+    min-width:93%;
+    max-height:100px;
+    max-width:93%;
+    overflow:auto;
 }
 
 
@@ -610,7 +625,7 @@ h2.heading-block-name {
 
 .contact-information__description {
     display:inline-block;
-    margin-left:45px;
+    margin-left:40px;
     
 }
 
@@ -771,44 +786,47 @@ h2.heading-block-name {
 
 /*Адаптив */
 @media (max-width:1000px) {
-    .menu-button-input:checked ~ .main {
-        -webkit-transform: translateX(275px);
-        -moz-transform: translateX(275px);
-        transform: translateX(275px);
-        transition:  0.3s;
+    // .menu-button-input:checked ~ .main {
+    //     -webkit-transform: translateX(275px);
+    //     -moz-transform: translateX(275px);
+    //     transform: translateX(275px);
+    //     transition:  0.3s;
+    // }
+
+
+    // .menu-button-input:checked ~ .header {
+    //     -webkit-transform: translateX(275px);
+    //     -moz-transform: translateX(275px);
+    //     transform: translateX(275px);
+    //     transition:  0.3s;
+    // }
+
+
+    // .menu-button-input:checked ~ .footer {
+    //     -webkit-transform: translateX(275px);
+    //     -moz-transform: translateX(275px);
+    //     transform: translateX(275px);
+    //     transition:  0.3s;
+    // }
+
+    .menu-button {
+        left:70px;
     }
 
-
-    .menu-button-input:checked ~ .header {
-        -webkit-transform: translateX(275px);
-        -moz-transform: translateX(275px);
-        transform: translateX(275px);
-        transition:  0.3s;
-    }
-
-
-    .menu-button-input:checked ~ .footer {
-        -webkit-transform: translateX(275px);
-        -moz-transform: translateX(275px);
-        transform: translateX(275px);
-        transition:  0.3s;
-    }
-
-    .navigation {
-
-        min-height: 750%;/*Не задается высота отностельно body почему?*/
-     
+    .header {
+        .header__title {
+            #lineDrawing {
+                width:530px;
+            }
+        }
     }
 }
 
 
 @media (max-width:900px){
     .menu-button {
-        left:100px; 
-    }
-
-    .navigation {
-        min-height: 760%;
+        left:60px;
+        top:30px; 
     }
 
 }
@@ -823,11 +841,6 @@ h2.heading-block-name {
     .menu-button {
         left: 30px;
     }
-
-    .navigation {
-        min-height: 800%;
-    }
-
 
     .about-me-photo{
         padding-left:0px;
@@ -877,6 +890,19 @@ h2.heading-block-name {
         }
     }
 
+    .menu-button {
+        left:40px;
+        top:20px;
+    }
+
+    .header {
+        .header__title {
+            #lineDrawing {
+                width:480px;
+            }
+        }
+    }
+
 }
 
 @media (max-width:730px) {
@@ -904,10 +930,6 @@ h2.heading-block-name {
             font-size: 3.2rem;
         }
     }
-
-    .navigation {
-        min-height: 820%;
-    }
 }
 
 
@@ -915,16 +937,24 @@ h2.heading-block-name {
     .header {
         .header__title{
             #lineDrawing {
-                width:480px;
+                width:430px;
             }
         }
+    }
+
+    .menu-button {
+        left:20px;
+        top:20px;
+    }
+
+    .header .header__title {
+        padding: 105px 0px 45px 0px;
     }
 }
 
 @media (max-width:620px) {
     .about-me {
         flex-wrap:wrap;
-        padding: 40px 0px 80px 0px;
 
 
         .about-me-photo-image_smile {
@@ -974,13 +1004,6 @@ h2.heading-block-name {
     }
 
 
-    .header {
-        .header__title {
-            padding: 85px 0px 85px 0px;
-        }
-    }
-
-
     .work-experience__experience-left-block,
     .work-experience__experience-right-block {
         width:83%;
@@ -1018,12 +1041,16 @@ h2.heading-block-name {
        display:none;
    }
 
-   .navigation {
-        min-height: 900%;
- 
+}
+
+@media (max-width:600px) {
+    .header {
+        .header__title{
+            #lineDrawing {
+                width:430px;
+            }
+        }
     }
-
-
 }
 
 
@@ -1035,13 +1062,9 @@ h2.heading-block-name {
     .header {
         .header__title{
             #lineDrawing {
-                width:430px;
+                width:390px;
             }
         }
-    }
-
-    .navigation {
-        min-height: 920%;
     }
 
     .leave-a-message-wrapper {
@@ -1079,7 +1102,7 @@ h2.heading-block-name {
             }
 
             #lineDrawing {
-                width:380px;
+                width:350px;
             }
                 
             .header__title-description {
@@ -1088,6 +1111,33 @@ h2.heading-block-name {
             }
 
         }
+    }
+    .about-me-photo:hover 
+    .about-me-photo-image_smile {
+        opacity:1;
+        // -webkit-transition:opacity 0.1s linear;
+        //  -moz-transition:opacity 0.1s linear;
+        //  -o-transition:opacity 0.1s linear;
+        //  transition:opacity 0.1s linear;
+    }
+    
+    .about-me-photo:hover 
+    .about-me-photo-image {
+        opacity:0;
+    }
+    .about-me-photo:hover 
+    .about-me-photo-image_smile {
+        opacity:0;
+        
+        // -webkit-transition:opacity 0.1s linear;
+        //  -moz-transition:opacity 0.1s linear;
+        //  -o-transition:opacity 0.1s linear;
+        //  transition:opacity 0.1s linear;
+    }
+
+    .about-me-photo:hover 
+    .about-me-photo-image {
+        opacity:1;
     }
 }
 
@@ -1111,10 +1161,14 @@ h2.heading-block-name {
 
         }
     }
+}
 
-    .navigation {
-        min-height: 1000%;
+@media (max-width:400px) {
+    .header {
+        .header__title{
+            #lineDrawing {
+                width:290px;
+            }
+        }
     }
-
-
 }

@@ -2,10 +2,10 @@ doctype
 html(lang="eng-ru")
     head
         meta(charset="utf-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" )
+        meta(name="viewport" content="width=device-width, user-scalable=no")
         link(href="styles/animate-css.css" rel="stylesheet")
         link(href="styles/main.css" rel="stylesheet")
-        title="Дипломный проект"
+        title="About me"
     body
         input(type="checkbox" class="menu-button-input" id="menu-button-id")
         label(for="menu-button-id" class="menu-button")
@@ -23,7 +23,7 @@ html(lang="eng-ru")
                  li.navigation__listen-menu-item
                      a(class="navigation__listen-menu-link" href="") Education
                  li.navigation__listen-menu-item
-                     a(class="navigation__listen-menu-link" href="single-portfolio.html") Work Experience
+                    a(class="navigation__listen-menu-link" href="single-portfolio.html") Work Experience
                  li.navigation__listen-menu-item
                      a(class="navigation__listen-menu-link" href="") Skills
                  li.navigation__listen-menu-item
@@ -170,12 +170,12 @@ html(lang="eng-ru")
             .leave-a-message-wrapper
                     .conteiner
                         .leave-a-message
-                            form(class="form")
+                            form(class="form" name="form" onsubmit="return validate()")
                                 label.form-label Label a Message
-                                input(class="form__input-name" type="text" value="Name" name="input-name" onclick="this.value='';" onblur="this.value=!this.value?'Name':this.value;")
-                                input(class="form__input-email" type="text" value="Email" name="input-email" onclick="this.value='';" onblur="this.value=!this.value?'Email':this.value;")
-                                input(class="form__input-message" type="text" value="Message*" name="input-area-message" onclick="this.value='';" onblur="this.value=!this.value?'Message*':this.value;")
-                                input(class="button buttom_in-form" type="button" value="Hire Me!")
+                                input(class="form__input-name" type="text" placeholder="Name" name="input-name" onclick="this.placeholder='';" onblur="this.placeholder=!this.placeholder?'Name':this.placeholder;")
+                                input(class="form__input-email" type="email" placeholder="Email" name="input-email" onclick="this.placeholder='';" onblur="this.placeholder=!this.placeholder?'Email':this.placeholder;" )
+                                textarea(class="form__input-message" placeholder="Message*" name="input-area-message" onclick="this.placeholder='';" onblur="this.placeholder=!this.placeholder?'Message*':this.placeholder;")
+                                input(class="button buttom_in-form" type="submit" value="Hire Me!")
                         .contact-information
                             .contact-information__location
                                 .contact-information__icon
@@ -216,6 +216,7 @@ html(lang="eng-ru")
         script(src="js/anime-master/anime-master/anime.min.js")
         script(src="js/javascript.js")
     
+
 
 
              

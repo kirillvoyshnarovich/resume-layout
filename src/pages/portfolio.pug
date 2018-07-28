@@ -5,7 +5,7 @@ html(lang="eng-ru")
         meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
         link(href="style/animate-css.css" rel="stylesheet")
         link(href="styles/portfolio.css" rel="stylesheet")
-        title="Портфолио"
+        title="Portfolio"
     body
         input(type="checkbox" class="menu-button-input" id="menu-button-id")
         label(for="menu-button-id" class="menu-button")
@@ -102,7 +102,7 @@ html(lang="eng-ru")
                                 label.form-label Label a Message
                                 input(class="form__input-name" type="text" value="Name" name="input-name" onclick="this.value='';" onblur="this.value=!this.value?'Name':this.value;")
                                 input(class="form__input-email" type="text" value="Email" name="input-email" onclick="this.value='';" onblur="this.value=!this.value?'Email':this.value;")
-                                input(class="form__input-message" type="text" value="Message*" name="input-area-message" onclick="this.value='';" onblur="this.value=!this.value?'Message*':this.value;")
+                                textarea(class="form__input-message" placeholder="Message*" name="input-area-message" onclick="this.placeholder='';" onblur="this.placeholder=!this.placeholder?'Message*':this.placeholder;")
                                 input(class="button buttom_in-form" type="button" value="Hire Me!")
                         .contact-information
                             .contact-information__location

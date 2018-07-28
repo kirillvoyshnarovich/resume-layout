@@ -28,6 +28,7 @@ html {
 
 body {
     margin:0px;
+    position:relative;
 }
 
 .conteiner {
@@ -156,7 +157,7 @@ body {
 .navigation {
     box-sizing:border-box;
     width: 275px;
-    min-height:1000%;/*Не задается высота отностельно body почему?*/
+    min-height:100%;/*Не задается высота отностельно body почему?*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -198,16 +199,17 @@ body {
         }
     }
 
-
 }
 
+.wrapper-button {
+    position: relative;
+}
 
 .menu-button {
     display:block;
     width:45px;
-    height:0px;
     fill:#fb6470;
-    position: relative;
+    position: absolute;
     top: 60px;
     left:150px;
 }
@@ -309,7 +311,9 @@ body {
             color:#ffffff;
             line-height: 1.8;
             text-decoration-line: none;
+            text-decoration:none;//for IE 11
             border-bottom: 1px solid #ffffff;
+
         }
     }
     
@@ -403,8 +407,6 @@ body {
             border-left:1px solid #cccccc;
             padding: 0px 0px 0px 55px;
         }
-
-
     }
 }
 
@@ -425,9 +427,14 @@ body {
 
 .form__input-message {
     @extend .form__input-name;
-    padding:3px 0px 70px 13px;
+    padding:3px 0px 5px 13px;
     margin-bottom: 25px;
-   
+    height:100px;
+    min-height:100px;
+    min-width:93%;
+    max-height:100px;
+    max-width:93%;
+    overflow:auto;
 }
 
 
@@ -464,7 +471,7 @@ body {
 
 .contact-information__description {
     display:inline-block;
-    margin-left:45px;
+    margin-left:40px;
     
 }
 
